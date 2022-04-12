@@ -1,0 +1,40 @@
+
+
+/*------ Cards Output CSS------*/
+body{
+    background: rgb(255,250,60);
+    background: radial-gradient(circle, rgba(255,250,60,1) 20%, rgba(206,201,65,1) 41%, rgba(103,99,74,1) 77%, rgba(53,50,79,1) 91%, rgba(3,0,83,1) 99%);
+    background-attachment: fixed;
+
+}
+#hero-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5% auto;
+    
+}
+.detail-page{
+    text-decoration: none;
+    color: black;
+}
+.detail-page:hover {
+    color: black;
+}
+.card{
+    /* flex-grow: 1 0 41%; */
+    margin: 18px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px grey;
+}
+
+.hero-image{
+    border-radius:20px;
+    padding: 2px 7px;
+    height: 250px;
+    width: 220px;
+}
+
+
+/*------ END------*/

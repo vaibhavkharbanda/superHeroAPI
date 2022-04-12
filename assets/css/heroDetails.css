@@ -1,0 +1,41 @@
+/*-----Hero Details Display------*/
+body{
+    background: rgb(255,250,60);
+    background: radial-gradient(circle, rgba(255,250,60,1) 20%, rgba(206,201,65,1) 41%, rgba(103,99,74,1) 77%, rgba(53,50,79,1) 91%, rgba(3,0,83,1) 99%);
+    background-attachment: fixed;
+
+}
+#hero-name{
+    margin: 3% auto;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.progress{
+    /* width:90%; */
+    height: 27px;
+    margin: 15px auto;
+    font-size: 1.2rem;
+}
+
+.sub-head{
+    display: flex;
+    font-size: 1.2rem;
+}
+
+#hero-image{
+    margin-left: 4%;
+    height: 80%;
+    border: 15px double darkblue;
+}
+.output{
+    color: darkblue;
+}
+
+.tab-heading{
+    margin: 25px auto;
+    color: darkblue;
+}
+
+
+/*------END-------*/
