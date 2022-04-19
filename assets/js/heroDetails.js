@@ -45,7 +45,8 @@ function diplayDetails(heroDetail){
         powerStatManupulation('strength-data',heroDetail.powerstats.strength,"Strength");
 
         //appearance output
-        // document.getElementById('eye-color').innerHTML=heroDetail.appearance.eye+'-'+color;
+        document.getElementById('eye-color').innerHTML=heroDetail.appearance["eye-color"];
+        document.getElementById('hair-color').innerHTML=heroDetail.appearance['hair-color'];
         document.getElementById('race').innerHTML=heroDetail.appearance.race;
         document.getElementById('gender').innerHTML='&nbsp'+heroDetail.appearance.gender;
         document.getElementById('height').innerHTML='&nbsp'+heroDetail.appearance.height[1];
@@ -53,13 +54,13 @@ function diplayDetails(heroDetail){
 
 
         //Biography output
-        // document.getElementById('full-name').innerHTML=heroDetail.biography.full+"-"+name;
+        document.getElementById('full-name').innerHTML=heroDetail.biography['full-name'];
         document.getElementById('alignment').innerHTML='&nbsp'+heroDetail.biography.alignment;
         document.getElementById('publisher').innerHTML='&nbsp'+heroDetail.biography.publisher;
         document.getElementById('aliases').innerHTML='&nbsp'+heroDetail.biography.aliases;
-        document.getElementById('race').innerHTML='&nbsp'+heroDetail.biography.alignment;
-        document.getElementById('race').innerHTML='&nbsp'+heroDetail.biography.alignment;
-        document.getElementById('race').innerHTML='&nbsp'+heroDetail.biography.alignment;
+        document.getElementById('first-appearance').innerHTML='&nbsp'+heroDetail.biography['first-appearance'];
+        document.getElementById('place-of-birth').innerHTML='&nbsp'+heroDetail.biography['place-of-birth'];
+        document.getElementById('alter-egos').innerHTML='&nbsp'+heroDetail.biography['alter-egos'];
         
 
 }
