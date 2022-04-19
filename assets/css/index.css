@@ -84,3 +84,22 @@ nav .navbar-nav li a{
 
 
 /*------ END------*/
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+
+    .navbar-nav{
+        margin: auto;
+    }
+    nav .navbar-nav li a{
+        /* color: lightgrey; */
+        font-size: 1.4rem
+    }
+  }
+
+
+/* ------END----- */

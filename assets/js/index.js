@@ -108,7 +108,7 @@ output.onclick=function(event){
     var div = event.target.getAttribute('divType');
     var favValue=event.target.getAttribute('value');
 
-
+    //toggling with fav buttons
     if (div === 'fav-btn') {
         if (id === null)
             return;

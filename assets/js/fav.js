@@ -1,7 +1,9 @@
+//checking and fetching the localstorage array of favlist
 var favList = JSON.parse(localStorage.getItem("favList")) === null
     ? []
     : JSON.parse(localStorage.getItem("favList"));
-    console.log(favList);
+
+
 if (favList == null) {
     document.getElementById('output-container').innerHTML("Ummm! No favourites Added Yet");
 }
@@ -13,6 +15,8 @@ else {
 
 }
 
+
+//fetching the hero detils using async await
 async function fetchHero(id) {
     let url = "https://superheroapi.com/api/10216671135609162/" + '' + favID;
     var xhrRequest = new XMLHttpRequest();
@@ -29,9 +33,9 @@ async function fetchHero(id) {
     await xhrRequest.send();
 }
 
-
+//generating the hero card and deleting aswell
 function heroCard(response) {
-    console.log(response);
+
     var heroCard=document.getElementById('hero-cards');
     
 
@@ -61,28 +65,31 @@ function heroCard(response) {
     cardAnchor.appendChild(heroName);
 
     var removeButton=document.createElement('i');
-    removeButton.setAttribute('class',"fa-solid fa-trash remove-fav");
+    var removeButton1=document.createElement('i'); 
+    removeButton1.innerHTML=" &nbsp"
+    removeButton1.setAttribute('class','helper');
+    removeButton.setAttribute('class',"fa-solid fa-trash remove-fav hide-class");
     removeButton.setAttribute('id',"remove-fav"+response.id);
     card.appendChild(removeButton);
+    card.appendChild(removeButton1);
 
 
+    //removing the hero from favlist
     removeButton.addEventListener('click',()=>{
         favList.splice(favList.indexOf(response.id),1);
         localStorage.setItem("favList",JSON.stringify(favList));
         card.remove();
     });
 
+    // redirecting the heros to its detail page
     cardAnchor.addEventListener('click',(element)=>{
         var heroID=element.path[1].id;
         localStorage.setItem("heroId",heroID);
     });
 
+
+
 }
 
 
-
-// function heroDetail(element){
-//     var heroID=element.path[2].id;
-//     localStorage.setItem("heroId",heroID);
-// }
 
