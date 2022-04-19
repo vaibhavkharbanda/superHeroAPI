@@ -1,6 +1,6 @@
 # Super Hero API 
 Fetch all the data from the Super hero API and present the output in a very good format.
-  A custom-crafted superhero search engine to know your superhero better! Made with love using HTML + CSS + VanillaJS + FontAwesome(for icons)
+  A custom-crafted superhero search engine to know your superhero better! Made with using HTML + CSS + VanillaJS + FontAwesome(for icons) + Bootstrap
 
 ## A Gateway to your favourite superhero world
 
