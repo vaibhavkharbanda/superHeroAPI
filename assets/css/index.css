@@ -7,6 +7,49 @@ body{
     background-attachment: fixed;
 
 }
+.navbar-nav{
+    margin: auto;
+}
+nav .navbar-nav li a{
+    /* color: lightgrey; */
+    font-size: 1.4rem
+}
+.active{
+    color: white !important;
+}
+#searchBar{
+    font-size: 1.3rem;
+    box-shadow: 5px 10px 25px ;
+    text-align: center;
+    display: block;
+    margin :auto;
+    margin-top: 2%;
+    
+}
+
+
+.notification-design{
+    position: absolute;
+    text-align: right;
+    padding: 5px 20px;
+    margin-left: 80%;
+    width: auto;
+    height: 30px;
+    background-color: rgb(42, 255, 42);
+    box-shadow: 3px 3px 10px rgb(131, 247, 131);
+}
+
+.fav-button{
+    color: lightgrey;
+    position: absolute;
+    top:5%;
+    left:3%;
+    font-size: x-large;
+    
+}
+#fav-button :hover{
+    color: red;
+}
 #hero-cards{
     display: flex;
     justify-content: space-evenly;
@@ -17,6 +60,9 @@ body{
 .detail-page{
     text-decoration: none;
     color: black;
+}
+.fav-filled{
+    color: red;
 }
 .detail-page:hover {
     color: black;

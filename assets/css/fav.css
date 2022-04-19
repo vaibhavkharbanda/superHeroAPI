@@ -1,0 +1,62 @@
+/* ------ Favourite List ------ */
+body{
+    background: rgb(255,250,60);
+    background: radial-gradient(circle, rgba(255,250,60,1) 20%, rgba(206,201,65,1) 41%, rgba(103,99,74,1) 77%, rgba(53,50,79,1) 91%, rgba(3,0,83,1) 99%);
+    background-attachment: fixed;
+}
+.navbar-nav{
+    margin: auto;
+}
+nav .navbar-nav li a{
+    /* color: lightgrey; */
+    font-size: 1.4rem
+}
+.active{
+    color: white !important;
+}
+.hero-image{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
+}
+#hero-cards{
+    counter-reset: section;
+}
+
+.card-li{
+    margin:0 20%;
+    padding: 10px 15px;
+    display: flex;
+    border-bottom: 1px solid black;
+    
+}
+.card-li::before{
+    counter-increment: section;
+    content: counter(section) ". ";
+    font-size: 1.5rem;
+    margin:auto 10px;
+}
+#fav-heading{
+    margin: 20px auto;
+    text-align: center;
+    color: darkblue;
+}
+.hero-name{
+    margin: auto 10px;
+}
+.card-anchor{
+    display: flex;
+    color: black;
+    text-decoration: none;
+}
+
+.remove-fav{
+    color: red;
+    font-size: 1.9rem;
+    margin: auto 120px;
+    text-align: center;
+}
+
+
+
+/*------End-----*/

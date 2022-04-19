@@ -5,7 +5,35 @@ body{
     background-attachment: fixed;
 
 }
+.navbar-nav{
+    margin: auto;
+}
+nav .navbar-nav li a{
+    /* color: lightgrey; */
+    font-size: 1.4rem
+}
+.fav-buttons{
+    font-size: 1.2rem;
+    padding: 5px;
+    position: absolute;
+    left:70%;
+    bottom: 80%;
+    box-shadow: 3px 3px 10px;
+}
+
+#add-to-fav{
+    background-color: greenyellow; 
+}
+
+.hide-class{
+    display: none;
+}
+
+.fa-heart, .fa-heart-crack{
+    color: red;
+}
 #hero-name{
+    
     margin: 3% auto;
     text-transform: uppercase;
     font-size: 3rem;
@@ -24,6 +52,7 @@ body{
 }
 
 #hero-image{
+    box-shadow: 10px 10px 20px 5px;
     margin-left: 4%;
     height: 80%;
     border: 15px double darkblue;
